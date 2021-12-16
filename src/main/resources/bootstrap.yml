@@ -3,7 +3,7 @@ server:
   max-http-header-size: ${MAX_HTTP_HEADER_SIZE:10240}
 spring:
   application:
-    name: devops-service-business
+    name: devops-service
   cloud:
     config:
       failFast: true
