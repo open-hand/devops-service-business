@@ -20,19 +20,37 @@
         <spring.data.redis.version>2.1.0.RELEASE</spring.data.redis.version>
         <devops.version>1.2.0-SNAPSHOT</devops.version>
         <devops.plugin.version>1.2.0-SNAPSHOT</devops.plugin.version>
+        <spring.data.redis.version>2.1.0.RELEASE</spring.data.redis.version>
     </properties>
 
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring.data.redis.version}</version>
+        </dependency>
+        <dependency>
             <groupId>io.choerodon</groupId>
             <artifactId>devops-service</artifactId>
             <version>${devops.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.data</groupId>
+                    <artifactId>spring-data-redis</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>io.choerodon</groupId>
             <artifactId>devops-service-business-plugin</artifactId>
             <version>${devops.plugin.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.data</groupId>
+                    <artifactId>spring-data-redis</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
     </dependencies>
