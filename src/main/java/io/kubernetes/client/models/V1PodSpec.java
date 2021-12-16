@@ -8,7 +8,6 @@ package io.kubernetes.client.models;
 import java.util.*;
 
 import com.google.gson.annotations.SerializedName;
-import io.kubernetes.client.openapi.models.*;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
