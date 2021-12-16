@@ -27,7 +27,6 @@ import java.nio.charset.StandardCharsets;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableChoerodonResourceServer
-@EnableCircuitBreaker
 @EnableAsync
 public class DevopsServiceBusinessApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(DevopsServiceBusinessApplication.class);
