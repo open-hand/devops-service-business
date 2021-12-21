@@ -32,7 +32,6 @@ public class DevopsServiceBusinessApplication {
 
     public static void main(String[] args) {
         try {
-            
             SpringApplication.run(DevopsServiceBusinessApplication.class, args);
         } catch (Exception e) {
             LOGGER.error("start error",e);
