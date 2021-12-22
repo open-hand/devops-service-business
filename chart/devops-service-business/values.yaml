@@ -90,6 +90,11 @@ env:
     # 数据库密码
     SPRING_DATASOURCE_PASSWORD: password
 
+    # 连接超时
+    FEIGN_CLIENT_CONFIG_DEFAULT_CONNECT_TIMEOUT: 2000
+    # 读取超时
+    FEIGN_CLIENT_CONFIG_DEFAULT_READ_TIMEOUT: 5000
+
     # Gitlab http(s) 协议访问地址
     SERVICES_GITLAB_URL: http://git.example.com
     # Gitlab ssh 协议访问地址

@@ -30,6 +30,7 @@ spec:
       containers:
       - name: {{ .Release.Name }}-init-db
         image: {{ include "service.image" . }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         command:
         - /bin/sh
         - -c
