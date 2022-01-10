@@ -19,7 +19,7 @@
         <choerodon.mainClass>io.choerodon.devops.DevopsServiceBusinessApplication</choerodon.mainClass>
         <spring.data.redis.version>2.1.0.RELEASE</spring.data.redis.version>
         <devops.version>1.2.0-alpha.5-SNAPSHOT</devops.version>
-        <devops.plugin.version>1.2.0-alpha.1.RELEASE</devops.plugin.version>
+        <devops.plugin.version>1.2.0-alpha.2-SNAPSHOT</devops.plugin.version>
     </properties>
 
 
