@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>devops-service-business</artifactId>
-    <version>1.2.0-alpha.6.RELEASE</version>
+    <version>1.2.0-alpha.7-SNAPSHOT</version>
     <packaging>jar</packaging>
     <url>https://github.com/open-hand/devops-service-business-business</url>
 
@@ -18,7 +18,7 @@
         <choerodon.serviceBuild>true</choerodon.serviceBuild>
         <choerodon.mainClass>io.choerodon.devops.DevopsServiceBusinessApplication</choerodon.mainClass>
         <spring.data.redis.version>2.1.0.RELEASE</spring.data.redis.version>
-        <devops.version>1.2.0-alpha.8.RELEASE</devops.version>
+        <devops.version>1.2.0-alpha.9-SNAPSHOT</devops.version>
         <devops.plugin.version>1.2.0-alpha.3.RELEASE</devops.plugin.version>
     </properties>
 
