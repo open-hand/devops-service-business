@@ -30,7 +30,6 @@ import io.choerodon.resource.annoation.EnableChoerodonResourceServer;
 public class DevopsServiceBusinessApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(DevopsServiceBusinessApplication.class);
 
-
     public static void main(String[] args) {
         try {
             SpringApplication.run(DevopsServiceBusinessApplication.class, args);
