@@ -50,7 +50,6 @@ public class DevopsServiceBusinessApplication {
         return template;
     }
 
-
     @Bean(name = "restTemplateForIp")
     public RestTemplate restTemplateForIp() {
         SimpleClientHttpRequestFactory requestFactory = new SimpleClientHttpRequestFactory();
