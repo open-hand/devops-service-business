@@ -37,7 +37,6 @@ public class DevopsServiceBusinessApplication {
             LOGGER.error("start error",e);
         }
     }
-
     // 初始化redisTemplate
     @Primary
     @Bean
