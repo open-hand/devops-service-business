@@ -99,6 +99,8 @@ env:
     SERVICES_GITLAB_URL: http://git.example.com
     # Gitlab ssh 协议访问地址
     SERVICES_GITLAB_SSHURL: git@git.example.com
+    # Gitlab ssh 协议内部访问地址，选填
+    SERVICES_GITLAB_INTERNALSSHURL:
     # 新建 Gitlab 用户的默认可创建仓库数量
     SERVICES_GITLAB_PROJECTLIMIT: 0
 
