@@ -37,7 +37,6 @@ public class DevopsServiceBusinessApplication {
             LOGGER.error("start error",e);
         }
     }
-
     // 初始化redisTemplate
     @Primary
     @Bean
@@ -49,7 +48,6 @@ public class DevopsServiceBusinessApplication {
         template.setConnectionFactory(redisConnectionFactory);
         return template;
     }
-
 
     @Bean(name = "restTemplateForIp")
     public RestTemplate restTemplateForIp() {
