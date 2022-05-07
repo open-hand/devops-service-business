@@ -3,9 +3,11 @@ preJob:
   # job 超时时间
   timeout: 1200
   # 工具 jar 包镜像库地址
-  image: registry.cn-shanghai.aliyuncs.com/c7n/dbtool:0.7.2
+  image: registry.cn-shanghai.aliyuncs.com/c7n/dbtool:0.7.5
   # 初始化数据库定义
   preInitDB:
+    #排除更新某些表或者字段 table1,table2.column1
+    exclusion:
     # 是否初始化本服务数据库
     enabled: true
     datasource:
