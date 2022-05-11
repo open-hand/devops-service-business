@@ -197,7 +197,8 @@ extraEnv:
   SERVICES_GITLAB_PROJECTLIMIT: 0
   # -- Agent repo concurrency syncsize
   AGENT_REPOCONCURRENCYSYNCSIZE: 1
-
+  # 百分比使用物理内存，预留一部分用于堆外内存以及外部程序
+  JAVA_OPTS: -XX:MaxRAMPercentage=90.0
   # -- Ignore the interface path of verification
   CHOERODON_RESOURCE_JWT_IGNORE: >-
     /workflow/**, /sonar/**, /ci, /sonar/info, /v2/api-docs,
