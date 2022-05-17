@@ -59,6 +59,7 @@ $ helm delete devops-service-business
 | extraEnv.EUREKA_CLIENT_SERVICEURL_DEFAULTZONE | string | `"http://register-server:8000/eureka/"` | Eureka client service url |
 | extraEnv.FEIGN_CLIENT_CONFIG_DEFAULT_CONNECT_TIMEOUT | int | `2000` | feign client config default connect timeout |
 | extraEnv.FEIGN_CLIENT_CONFIG_DEFAULT_READ_TIMEOUT | int | `5000` | feign client config default read timeout |
+| extraEnv.JAVA_OPTS | string | `"-XX:MaxRAMPercentage=90.0"` |  |
 | extraEnv.LOG_LEVEL | string | `"info"` |  |
 | extraEnv.NEXUS_PROXY_URIPREFIX | string | `"/rdupm/v1/nexus/proxy"` |  |
 | extraEnv.SERVICES_FRONT_URL | string | `"http://app.example.com"` | Choerodon front url |
@@ -131,7 +132,7 @@ $ helm delete devops-service-business
 | livenessProbe.initialDelaySeconds | int | `480` | Initial delay seconds for livenessProbe |
 | livenessProbe.periodSeconds | int | `5` | Period seconds for livenessProbe |
 | livenessProbe.successThreshold | int | `1` | Success threshold for livenessProbe |
-| livenessProbe.timeoutSeconds | int | `5` | Timeout seconds for livenessProbe |
+| livenessProbe.timeoutSeconds | int | `3` | Timeout seconds for livenessProbe |
 | nameOverride | string | `nil` | String to partially override common.names.fullname template (will maintain the release name) |
 | nodeAffinityPreset.key | string | `""` | Node label key to match |
 | nodeAffinityPreset.type | string | `""` | Node affinity type. Allowed values: soft, hard |
@@ -150,10 +151,10 @@ $ helm delete devops-service-business
 | podLabels | object | `{}` | Pod labels |
 | readinessProbe.enabled | bool | `true` | Enable readinessProbe |
 | readinessProbe.failureThreshold | int | `5` | Failure threshold for readinessProbe |
-| readinessProbe.initialDelaySeconds | int | `5` | Initial delay seconds for readinessProbe |
+| readinessProbe.initialDelaySeconds | int | `30` | Initial delay seconds for readinessProbe |
 | readinessProbe.periodSeconds | int | `5` | Period seconds for readinessProbe |
 | readinessProbe.successThreshold | int | `1` | Success threshold for readinessProbe |
-| readinessProbe.timeoutSeconds | int | `1` | Timeout seconds for readinessProbe |
+| readinessProbe.timeoutSeconds | int | `3` | Timeout seconds for readinessProbe |
 | replicaCount | int | `1` | Number of deployment replicas |
 | resources.limits | object | `{"memory":"3Gi"}` | The resources limits for the init container |
 | resources.requests | object | `{"memory":"3Gi"}` | The requested resources for the init container |
@@ -183,9 +184,9 @@ $ helm delete devops-service-business
 | startupProbe.enabled | bool | `false` | Enable startupProbe |
 | startupProbe.failureThreshold | int | `60` | Failure threshold for startupProbe |
 | startupProbe.initialDelaySeconds | int | `0` | Initial delay seconds for startupProbe |
-| startupProbe.periodSeconds | int | `10` | Period seconds for startupProbe |
+| startupProbe.periodSeconds | int | `5` | Period seconds for startupProbe |
 | startupProbe.successThreshold | int | `1` | Success threshold for startupProbe |
-| startupProbe.timeoutSeconds | int | `5` | Timeout seconds for startupProbe |
+| startupProbe.timeoutSeconds | int | `3` | Timeout seconds for startupProbe |
 | tolerations | list | `[]` | Tolerations for pod assignment. Evaluated as a template. |
 | updateStrategy.rollingUpdate | object | `{"maxSurge":"100%","maxUnavailable":0}` | Rolling update config params. Present only if DeploymentStrategyType = RollingUpdate. |
 | updateStrategy.type | string | `"RollingUpdate"` | Type of deployment. Can be "Recreate" or "RollingUpdate". Default is RollingUpdate. |
