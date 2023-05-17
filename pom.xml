@@ -17,7 +17,7 @@
         <choerodon.serviceBuild>true</choerodon.serviceBuild>
         <choerodon.mainClass>io.choerodon.devops.DevopsServiceBusinessApplication</choerodon.mainClass>
         <devops.version>2.0.12-SNAPSHOT</devops.version>
-        <devops.plugin.version>2.0.1.RELEASE</devops.plugin.version>
+        <devops.plugin.version>2.0.2-SNAPSHOT</devops.plugin.version>
     </properties>
 
 
